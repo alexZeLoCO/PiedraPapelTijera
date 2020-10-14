@@ -43,27 +43,27 @@ public class PiedraPapelTijera {
 			}
 			
 			
-			if (usr == 1 && pc == 2) {		//SI USUARIO JUGÓ PIEDRA Y PC ES PAPEL
+			if (usr == 1 && pc < 2 && pc > 1) {		//SI USUARIO JUGÓ PIEDRA Y PC ES PAPEL
 				System.out.print("Ha ganado Bot");		//GANA BOT
 				win = 1;		//CAMBIA VALOR DE WIN PARA CERRAR BUCLE WHILE
 			}
-			if (usr == 2 && pc == 3) {		//SI USUARIO JUGÓ PAPEL Y PC ES TIJERA
+			if (usr == 2 && pc < 3 && pc > 2) {		//SI USUARIO JUGÓ PAPEL Y PC ES TIJERA
 				System.out.print("Ha ganado Bot");		//GANA BOT
 				win = 1;		//CAMBIA VALOR DE WIN PARA CERRAR BUCLE WHILE
 			}
-			if (usr == 3 && pc == 1) {		//SI USUARIO JUGÓ TIJERA Y PC ES PIEDRA
+			if (usr == 3 && pc < 1 && pc > 0) {		//SI USUARIO JUGÓ TIJERA Y PC ES PIEDRA
 				System.out.print("Ha ganado Bot");		//GANA BOT
 				win = 1;		//CAMBIA VALOR DE WIN PARA CERRAR BUCLE WHILE
 			}
-			if (usr == 1 && pc == 3) {		//SI USUARIO JUGÓ PIEDRA Y PC ES TIJERA
+			if (usr == 1 && pc < 2 && pc > 1) {		//SI USUARIO JUGÓ PIEDRA Y PC ES TIJERA
 				System.out.print("Ha ganado Jugador");		//GANA USUARIO
 				win = 1;		//CAMBIA VALOR DE WIN PARA CERRAR BUCLE WHILE
 			}
-			if (usr == 2 && pc == 1) {		//SI USUARIO JUGÓ PAPEL Y PC ES PIEDRA
+			if (usr == 2 && pc < 1 && pc > 0) {		//SI USUARIO JUGÓ PAPEL Y PC ES PIEDRA
 				System.out.print("Ha ganado Jugador");		//GANA USUARIO
 				win = 1;		//CAMBIA VALOR DE WIN PARA CERRAR BUCLE WHILE
 			}
-			if (usr == 3 && pc == 2) {		//SI USUARIO ES TIJERA Y PC ES PAPEL
+			if (usr == 3 && pc < 2 && pc > 1) {		//SI USUARIO ES TIJERA Y PC ES PAPEL
 				System.out.print("Ha ganado Jugador");		//GANA USUARIO
 				win = 1;		//CAMBIA VALOR DE WIN PARA CERRAR BUCLE WHILE
 			}
